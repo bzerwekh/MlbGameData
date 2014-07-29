@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="91bff332-8d4c-4bf1-b628-885496c52b07" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51383/Services/GameScoreService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GameScoreService.disco" MetadataType="Disco" ID="393680f9-b483-4045-83ae-87e5755cbd10" SourceId="1" SourceUrl="http://localhost:51383/Services/GameScoreService.svc?disco" />
+    <MetadataFile FileName="GameScoreService.xsd" MetadataType="Schema" ID="e7c5775c-a900-45af-bf52-141b9da570a9" SourceId="1" SourceUrl="http://localhost:51383/Services/GameScoreService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GameScoreService1.xsd" MetadataType="Schema" ID="106affa4-5d96-45a8-a3f8-ac5846a8349d" SourceId="1" SourceUrl="http://localhost:51383/Services/GameScoreService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GameScoreService2.xsd" MetadataType="Schema" ID="cea71e9f-9e76-46f5-83c3-1039759664a4" SourceId="1" SourceUrl="http://localhost:51383/Services/GameScoreService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GameScoreService.wsdl" MetadataType="Wsdl" ID="f96547a7-416b-420b-a2ae-12d23735ab4c" SourceId="1" SourceUrl="http://localhost:51383/Services/GameScoreService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

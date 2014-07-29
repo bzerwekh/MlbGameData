@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MlbData.Services.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MlbData.Services.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="GetGameScoreRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TeamName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetGameScoreRequest" nillable="true" type="tns:GetGameScoreRequest" />
+  <xs:complexType name="GetGameScoreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GameResults" nillable="true" type="tns:ArrayOfGameResult" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Successful" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetGameScoreResponse" nillable="true" type="tns:GetGameScoreResponse" />
+  <xs:complexType name="ArrayOfGameResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GameResult" nillable="true" type="tns:GameResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGameResult" nillable="true" type="tns:ArrayOfGameResult" />
+  <xs:complexType name="GameResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AwayRuns" type="xs:int" />
+      <xs:element minOccurs="0" name="AwayTeam" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomeRuns" type="xs:int" />
+      <xs:element minOccurs="0" name="HomeTeam" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GameResult" nillable="true" type="tns:GameResult" />
+  <xs:complexType name="GetGameScoresForDateRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetGameScoresForDateRequest" nillable="true" type="tns:GetGameScoresForDateRequest" />
+</xs:schema>
